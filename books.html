@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::books::</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <meta name="viewport"content="width=device-width,inital-scale=1">
+
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body{
+	box-sizing:border-box;
+}
+header section{
+	overflow-x:hidden;
+}
+:root{
+	--single-font:"single",cursive;
+	--rubik:"rubik",cursive;
+	--patua:"pauta one",cursive;
+	--lobster:"lobster",cursive;
+	--light-black:#2e2c2caf;
+	--bggradient:linear-gradient(to bottom,#dd2476,#ff512f);
+	--light-gray:rgba(255,255,255,0);
+}
+header{
+	font-family:var(--single-font);
+	font-size:0.9rem;
+	color:whitesmoke;
+}
+header{
+	background:#dd2476;
+	background:var(--bggradient);
+}
+dropdown-content{
+	display:none;
+	position:absolute;
+	background:white;
+	min-width:160px;
+	box-shadow:0px 2px 15px 0px rgba(0,0,0,2);
+	z-index:1;
+	background:var(--bggradient);
+}
+dropdown-content a{
+	color:black;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+dropdown-content a-hover{
+	background:#ddd;
+}
+ dropdown-hover dropdown-content{
+	display:block;
+}
+header nav-item last-child{
+	padding-right:10.5rem;
+}
+header nav-item{
+	padding:0.9em;
+}
+header navbar-brand{
+	padding-left:8em;
+}
+header nav-link-hover{
+	color:black;
+}
+header-row col-md-5{
+	padding:4.2vmin 1vmin;
+}
+header-row col-md-7{
+	padding:22vmin 1vmin;
+	padding-bottom:35vmin;
+	font-family:var(--rubik);
+}
+header-row col-md-5 img{
+	width:90%;
+}
+header-container col-md-7 h6{
+	padding:1vmin;
+	letter-spacing:4px;
+}
+header-container col-md-7 h1{
+	font-size:8vmin;
+	font-weight:bold;
+	padding:0.1em 0em;
+}
+header-container col-md-7 p{
+	padding:1vmin 5vmin;
+}
+header-container col-md-7  button{
+	border-radius:30px;
+	font-weight:bold;
+}
+section-1{
+	padding:20vmin 0;
+}
+section-row col-md-6-pray img{
+	opacity:0.8;
+	width:70%;
+	border-radius:0.2rem;
+}
+section-1-row col-md-6 last-child{
+	position:relative;
+}
+section-1-row col-md-6-panel{
+	position:absolute;
+	top:7vmin;
+	left:-18vmin;
+	background:white;
+	border-radius:3px;
+	text-align:left;
+	padding:13vmin 5vmin 20vmin 10vmin;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+	z-index:1;
+}
+section-1-row col-md-6-panel h1{
+	font-weight:bold;
+	padding:0.4em 0;
+	font-size:2em;
+}
+section-1-row col-md-6-panel p{
+	font-size:0.9em;
+	color:rgba(0,0,0,0.5);
+}
+/*section-2*/
+.cover{
+	width:100%;
+	height:55vmin;
+	background:url("img/poiu-ui.jpg");
+    background-position:-24rem -19rem;
+    background-size:150%;
+    position:relative;
+}
+cover-content{
+	background:rgba(0,0,0,0.7);
+	height:100%;
+	width:100%;
+	padding-top:19vmin;
+}
+cover-content-h1{
+	font-family:var(--patua);
+	font-size:6vmin;
+	color:white;
+}
+cover-content>p{
+	font-family:var(--rubik);
+	font-size:2vmin;
+	color:#e5e5e5;
+}
+numbers-rect{
+	position:relative;
+	z-index:1;
+	background:whitesmoke;
+	width:17rem;
+	height:12rem;
+	padding-top:3.5vmin;
+	margin:1rem;
+	border-radius:5em;
+	box-shadow:1px 2px 50px 0px rgba(0,0,0,0.2); 
+}
+.numbers{
+	margin-top:-15vmin;
+}
+numbers-rect h1{
+	font-size:5rem;
+	color:tomato;
+}
+numbers-rect p{
+	font-family:var(--patua);
+}
+purchase-h1{
+	padding-top:15vmin;
+	padding-bottom:0 -1em;
+	font-family:var(--lobster);
+}
+.purchase>p{
+	color:var(--light-black);
+	font-size:3vmin;
+	padding-bottom:10vmin;
+}
+purchase-cards-card{
+	width:22rem;
+	margin:3vmin;
+}
+cards-div{
+	padding:0;
+	margin;0;
+}
+card-titlie{
+	background:rgba(208,241,241,0.199);
+	padding:1.4rem 2.5rem;
+	font-size: 2vmin;
+}
+card-card-text{
+	padding:2.5rem 3rem;
+	color:var(--light-black);
+}
+card-body-pricing{
+	background:rgba(208,241,241,0.199);
+	border-top-right-radius:170px;
+	border-top-left-radius:170px; 
+}
+card-body-pricing>h1{
+	font-size:10vmin;
+	padding:1em o.5em;
+}
+/*sction 3*/
+section-3 container-fluid{
+	height:70vmin;
+	margin-top:15vmin;
+	background:var(--bggradient);
+}
+section-3 col-md-12-h1{
+	padding:2em 0 0.5em 0;
+	color:white;
+	font-size:6vmin;
+}
+section-3 col-md-12-p{
+	padding:0.4em;
+	padding-bottom:2em;
+	color:var(--light-gray);
+	font-size:3vmin;
+}
+section-3-desktop{
+	background:white;
+	display:inline-block;
+	border-radius:3em;
+	padding:2vmin 4.5vmin;
+	margin:1em;
+}
+section-3-desktop h3{
+	font-size:4vmin;
+}
+section-3-desktop p{
+	font-size:2vmin;
+}
+section-3-sektop h3{
+	font-size:4vmin;
+}
+section-3-desktop p{
+	font-size:2vmin;
+}
+/*section 4*/
+scetion-container h1{
+	font-size:6vmin;
+	padding-top:14vmin;
+}
+section-4-team{
+	padding:10vmin;
+}
+section-4-card{
+	width:22rem;
+	margin-top:10vmin;
+}
+section-4-card card-text{
+	padding:0.5em;
+}
+section-4-card card-body{
+	font-size:1.5em;
+}
+section-4 carousel-item{
+	padding-left:3rem;
+}
+boder-radius{
+	border-radius:340px;
+	width:60%;
+}
+/***footer***/
+footer{
+	background:rgba(0,0,0,0.815);
+	overflow-x:hidden;
+	padding:14vmin 18vmin;
+}
+footer p-span{
+	color:#ff512f;
+}
+footer input{
+	border:none !important;
+}
+footer-placeholder{
+	color:white !important;
+}
+footer input-group input-group-text{
+	background:var(--bggradient);
+	border:none;
+}
+footer-column i{
+	color:#dd2476;
+}
+footer-column i-i{
+	padding:0,0.5em;
+}
+</style>
+                            
+</head>
+<body style="overflow-x: hidden";>
+<div style=position:absolute; background-color:red; width:100px; height:100px;></div>
+	<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <i class="fa fa-book" aria-hidden="true"></i>
+<a class="navbar-brand" href="#">Books</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  	<div class="mr-auto"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Course</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">price</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="#">login</a>
+
+<div id="ModalLoginForm" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title"><a href="form.html">Login
+                </a></h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" method="POST" action="">
+                    <input type="hidden" name="_token" value="">
+                    <div class="form-group">
+                        <label class="control-label">E-Mail Address</label>
+                        <div>
+
+                            <input type="email" class="form-control input-lg" name="email" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <div>
+
+                            <input type="password" class="form-control input-lg" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="checkbox">
+                              
+                                	<label>
+                                    <input type="checkbox" name="remember"> Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </div></a>
+      </li>
+
+      <li class="nav-item dropdown">
+      	<div class ="dropdown">
+      		<a href="#" class="nav-link">pages</a>
+      		<div class="dropdown-content">
+      			<a href="#">generic</a>
+      			<a href="#">elemnts</a>
+      		</div>
+      	</div>
+    
+
+<div id="ModalLoginForm" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Login</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" method="POST" action="">
+                    <input type="hidden" name="_token" value="">
+                    <div class="form-group">
+                        <label class="control-label">E-Mail Address</label>
+                        <div>
+
+                            <input type="email" class="form-control input-lg" name="email" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <div>
+
+                            <input type="password" class="form-control input-lg" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="checkbox">
+                              
+                                	<label>
+                                    <input type="checkbox" name="remember"> Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">fact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</nav>
+</div>
+</div>
+<div class="container text-center">
+	<div class="row">
+		<div class="col-md-7 col-sm-12 ">
+			<h6 class="text-dark">AUTHOR:DAILY TUTION</h6>
+			<h1 class="text-dark">EXCITING ADVENTURE</h1>
+			<p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			                     and more recently with desktop publishing software like Aldus PageMaker including versions 
+			                     of Lorem Ipsum</p>
+<button class="btn btn-light px-5 py-2">By now for $5.99</button>
+</div>
+<div class="col-md-5 col-sm-12 h-25">
+<img src="./img/poiu-ui.jpg" alt="Girl in a jacket" width="500" height="600">
+	</div>
+
+	</div>
+</div>
+
+	</header>
+	<main>
+		<section class="section-1">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="pray">
+							
+                        <img src="img/img-girl.jpg" alt="Girl in a jacket">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel text-left">
+							<h1>Mr.Devid Smith</h1>
+							<p class="pt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+							                when an unknowf type and scrambled.</p>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has suretting,</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-2 container-fluid p-0">
+	<div class="cover">
+		<div class="content text-center">
+			<h1>Some Features That Made Us Unique</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</p>
+</div>
+</div>
+
+<div classs="purchase text-center">
+	<center>
+	<h1>purchase whatever you want </h1>
+	<p>lorem ipsum dolor sit amet consectetur adipising elit</p>
+</center>
+	<div class="cards">
+		<div class="d-flex flex-row justify-content-center flex-wrap">
+
+     <div class="card-deck">
+			<div class="card">
+				<div class="card-body">
+					<div class="title">
+						<h5 class="card-title">PDF</h5>
+					</div>
+					<p class="card-text">
+					with supprting text below as anatural lead in</p>
+					<div class="pricing">
+						<h1>$77.99</h1>
+						<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-body">
+					<div class="title">
+						<h5 class="card-title">PDF</h5>
+					</div>
+					<p class="card-text">
+					with supprting text below as anatural lead in</p>
+					<div class="pricing">
+						<h1>$77.99</h1>
+						<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+					</div>
+				</div>
+			</div>
+		
+
+			<div class="card">
+				<div class="card-body">
+					<div class="title">
+						<h5 class="card-title">PDF</h5>
+					</div>
+					<p class="card-text">
+					with supprting text below as anatural lead in</p>
+					<div class="pricing">
+						<h1>$77.99</h1>
+						<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+					</div>
+				</div>
+			</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br/>
+<br/>
+	
+		</main>
+		<footer>
+			<div class="container-fluid p-0">
+				<div class="row text-left">
+					<div class="col-md-5 col-d-5">
+						<h1 class="text-light">About us</h1>
+						<p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+						<p class="pt-4 text-muted">Copyright © 2008 Inc. All rights reserved.<span>Daily Tution</span></p>
+</div>
+<div class="col-md-5">
+	<h4 class="text-light">Newsletter</h4>
+	<p class="text-muted">Stay Updtaed</p>
+	<form class="form-inline">
+		<div class="col ">
+			<div class="input-group pr-5">
+				<input type="text" class="form-contrl bg-dark text-white placeholder=email">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="col-md-2  col-sm-12">
+	<h4 class="text-light">Follow us</h4>
+	<p class="text-muted">let us be social</p>
+	<div class="column">
+
+						<i class="fa fa-facebook text-white" aria-hidden="true"></i>
+						<i class="fa fa-google text-white" aria-hidden="true"></i>
+						<i class="fa fa-twitter text-white" aria-hidden="true"></i>
+	</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

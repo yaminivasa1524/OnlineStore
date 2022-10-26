@@ -1,0 +1,26 @@
+{
+	"details":{
+       "name":"yamini", 
+       "experience":"12 years",
+       "course":["internship on web desining","python programming","html"]
+	},
+	"triners":[
+	{
+		"name":"kalayan sir",
+		"experience":"5 years",
+		"course":["internship","python"]
+	},
+	{
+
+		"name":"uma",
+		"experience":"10 years",
+		"course":["internship","python"]
+	},
+    {
+		"name":";badulla",
+		"experience":"6 years",
+		"phonenumber":"44499392939",
+		"course":["internship","python"]
+	}
+	]
+}

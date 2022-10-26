@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::fetch API concept::</title>
+
+</head>
+<body>
+	<div id="demo">
+	</div>
+	<script type="text/javascript">
+	var main=document.querySelector("#demo");
+	fetch('data.json').then(response=>{
+		return response.json();
+	}).then(data=>{
+	 console.log(data);
+	 details(data);
+	})
+	var main=document.querySelector("#demo");
+	let details=data=>{
+		var heading1=document.createElement("h1");
+		heading1.textContent=data.name;
+		main.appendChild(heading1);
+	}
+</script>
+</body>
+</html>

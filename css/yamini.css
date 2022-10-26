@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit&family=Pangolin&display=swap');
+
+:root{
+	--light-gray:#2b3032a1;
+	--primary-color:#45ccb8;
+	--border:#2b303218;
+	--text-color:#ff686b;
+	--gugi:"gugi",cursive;
+	--sofia:"sofia",cursuve;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f0ffff;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.primary-color{
+	color:var(--primary-color);
+}
+.bg-primary-color{
+	background-color: var(--primary-color)!important;
+}
+.text-color{
+	color:var(--text-color);
+}
+.font-roboto{
+	font-faminly:var(roboto);
+}
+.lightblue{
+	color:lightblue;
+}
+/*header*/
+header{
+	background-color:var(--primary-color);
+	font-family:var(--gugi);
+}
+header .site-title{
+	font-family:var(--gugi);
+}
+.container .dropdown-toogle.container .dropdown-item{
+	font-size:0.7em;
+}
+.header-links a{
+	font-size: 0.9em;
+	text-decoration: none;
+	color:white;
+
+}
+/***nav menu**/
+.navbar-nav{
+	padding:0.8em 0em;
+}
+.navbar-nav .nav-link{
+	font-size:0.9em;
+	color:var(--light-gray)!important;
+}
+.navbar-nav .nav-item .nav-link{
+	padding:0.1.3em;
+}
+.navbar-nav .basket-icons{
+	margin-right:6.5rem !import;
+}
+body{
+	margin:0%;
+	padding:0%;
+	background:34495e;
+}
+.slideshow{
+	width:700px;
+	height:400px;
+	overflow:hidden;
+}
+.middle{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%,-50%);
+}
+.navigation{
+	position: absolute;
+	bottom:20px;
+	left:50px;
+	transform: translateX(-50%);
+	display:flex;
+}
+.bar{
+	width:50px;
+	height:10px;
+	border: 2px solid #fff;
+	margin:6px;
+	cursor:pointer;
+	transition:0.4s;
+}
+.bar:hover{
+	background:#fff;
+}
+input[name="r1"]{
+	position:absolute;
+	visibility:hidden;
+}
+.slides{
+	width:500%;
+	height:100%;
+	display:flex;
+}
+.slide{
+	width:20%
+	transition:0.2s;
+}
+.slide img{
+	width:100%;
+	height: 100%
+}
+#r1:checked .s1{
+	margin-left: 0;
+}
+#r2:checked .s1{
+	margin-left:-20;
+}
+#r3:checked .s1{
+	margin-left: -40;
+}
+
+:root{
+	--single-font:"single",cursive;
+	--rubik:"rubik",cursive;
+	--patua:"pauta one",cursive;
+	--lobster:"lobster",cursive;
+	--light-black:#2e2c2caf;
+	--bggradient:linear-gradient(to bottom,#dd2476,#ff512f);
+	--light-gray:rgba(255,255,255,0);
+	}
+
+footer{
+	background:rgba(0,0,0,0.815);
+	overflow-x:hidden;
+	padding:4vmin 18vmin;
+}
+footer p-span{
+	color:#ff512f;
+}
+footer input{
+	border:none !important;
+}
+footer-placeholder{
+	color:white !important;
+}
+footer input-group input-group-text{
+	background:var(--bggradient);
+	border:none;
+}
+footer-column i{
+	color:#dd2476;
+}
+footer-column i-i{
+	padding:0,0.5em;
+}
+@media screen and (max-width: 768px) {
+.ctext-wrap .btn {
+    display: block;
+    width: auto;
+    float: none;
+}@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width:620px){
+	footer{
+	width:100%;
+}
+	}
+	img{
+
+  width:100%;
+  height:auto;
+} 
+@media only screen and (max-width:620px){
+.carousel-item{
+	width:100%;
+} 
+}
+@media only screen and(max-width: 600px){
+	body{
+		width:100%;
+	}
+	}
+}

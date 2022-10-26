@@ -1,0 +1,8 @@
+.heading{
+	background-color:#f4f4f4;
+
+}
+table,tr,td{
+	 border: 2px solid #000;
+	border-collapse: collapse;
+}
